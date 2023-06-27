@@ -36,7 +36,7 @@ sudo systemctl status apache2
 ```
 ![apachestatus](./images/apachestatus.PNG)
 
-### Configuring Load Balance
+### Configuring Load Balancer
 
 The following commands are used for the apache load balacing configuration. 
 
@@ -67,7 +67,7 @@ We take the ip address of the load balancer server and connect to it as seen bel
 
 ![apache](./images/loadbalancersite.PNG)
 
-To confirm that traffic is routed evenly to both web servers as the load balancer server is receiving traffic (which in our case is by refreshing the webpage) we can check the logs both servers receive sudo tail -f /var/log/httpd/access_log
+To confirm that traffic is routed evenly to both web servers as the load balancer server is receiving traffic (which in our case is by refreshing the webpage) we can check the logs both servers receive `sudo tail -f /var/log/httpd/access_log`
 
 Server 1
 ![server1](./images/server1.PNG)
